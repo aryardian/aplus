@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #87CEEB;
+  --color-panel: #6FBEDE;
+  --color-ink: #0F2733;
+  --color-inkdim: #33566A;
+  --color-orange: #F4B740;
+  --color-orangedark: #DE9E1F;
+
+  --font-display: "Poppins", sans-serif;
+  --font-sans: "Work Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #10e0cf;
+  color: #fff;
+}
+
+.card-tilt {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-tilt:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -20px rgba(217, 112, 43, 0.35);
+}
